@@ -30,14 +30,6 @@ export class Utilisateur{
     @Column({nullable:true,length:255})
     compte_id:string;
 
-    @Column({nullable:true,type:'text'})
-    compte_token:string;
-
-    @Column({nullable:true,type:'timestamp'})
-    email_verif: Date;
-
-    @Column({nullable:true,length:100})
-    token_rem:string;
     
     @Column ({type:'enum', enum:Role, default:Role.CLIENT})
     role: Role;
